@@ -2,14 +2,14 @@
 #
 #  This class is used to enable/disable remote desktop and remote desktop network level authentication
 #  A windows firewall rule named "Remote Desktop - Puppet" is automatically created in the event the windows firewall is enabled
-# 
-# == Parameters: 
+#
+# == Parameters:
 #
 #  $rdp_enable:: Whether RDP is enabled. Defaults to false or disabled.
 #  Valid values: true and false
 #
 #  $rdp_nla_enable:: Whether Network Level Authentication is enabled. RDP needs to be enabled
-#  for the setting to be effective. Defaults to false or disabled. 
+#  for the setting to be effective. Defaults to false or disabled.
 #  Valid values: true and false
 #
 # == Requires:
@@ -31,7 +31,7 @@ class rdp (
   $rdp_nla_enable = false,
 ) {
 
-# Validate rdp class 
+# Validate rdp class
 validate_bool($rdp_enable)
 validate_bool($rdp_nla_enable)
 
@@ -68,15 +68,13 @@ registry::value { 'rdp_nla':
 # Enable RDP Firewall Rule (Windows firewall is NOT enabled but the required rule is created)
 
 windows_firewall::exception { 'rdp_firewall':
-     ensure       => present,
-     direction    => 'in',
-     action       => 'allow',
-     enabled      => 'yes',
-     protocol     => 'TCP',
-     local_port   => '3389',
-     display_name => 'Remote Desktop - Puppet',
-     description  => 'This exception allows RDP access (TCP 3389)',
-   }
-
-
+  ensure       => present,
+  direction    => 'in',
+  action       => 'allow',
+  enabled      => 'yes',
+  protocol     => 'TCP',
+  local_port   => '3389',
+  display_name => 'Remote Desktop - Puppet',
+  description  => 'This exception allows RDP access (TCP 3389)',
+  }
 }
