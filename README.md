@@ -1,40 +1,40 @@
-# Windows RDP Module
+# puppet-rdp
 
-##Overview
+Puppet module to RDP on Windows platforms
 
-Puppet module to enable/disable Remote Desktop and RDP Network Level Authentication. A windows firewall is automatically
-created in the event the windows firewall is enabled. The firewall is NOT turned on automatically. 
+===
 
+# Compatability
 
-###Setup Requirements
+This module has been tested to work on the following systems with Puppet v3 and Ruby versions 1.8.7, 1.9.3 and 2.0.0.
 
-Depends on the following modules:
+ * Windows Server 2008 R2
+ * Windows Server 2012 R2
 
-[puppetlabs/registry](https://forge.puppetlabs.com/puppetlabs/registry)
+===
 
-[puppetlabs/stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib)
+# Parameters
 
-[rmsphd/windows_firewall](https://forge.puppetlabs.com/rmsphd/windows_firewall)
+rdp_enable
+-----------
+Enable RDP
 
-##Usage
+- *Default*: false
 
-Class: rdp
+rdp_nla_enable
+---------------------------
+Enable network level authentication.
 
-        class { 'rdp':
-          rdp_enable => true,
-          rdp_nla_enable => true,
-        }
+- *Default*: false
 
-Parameters:
-  $rdp_enable
-  $rdp_nla_enable
+===
 
-Both parameters accept boolean true and false
+## Sample usage:
+Enable RDP
 
-##Tested Operating Systems
-
-Supported on Windows Server 2008R2.
-
-##Contact
-
-* Martez Reed <martez.reed@greenreedtech.com>
+<pre>
+class { 'rdp':
+  rdp_enable => true,
+  rdp_nla_enable => true,
+  }
+</pre>

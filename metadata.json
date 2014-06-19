@@ -17,7 +17,7 @@
   ],
   "types": [],
   "checksums": {},
-  "source": "",
-  "project_page": "",
-  "license": ""
+  "source": "https://github.com/martezr/puppet-rdp.git",
+  "project_page": "https://github.com/martezr/puppet-rdp",
+  "license": "Apache 2.0"
 }
