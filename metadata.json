@@ -1,18 +1,27 @@
 {
-  "name": "martezr-rdp",
-  "version": "0.1.1",
-  "summary": "Puppet module to enable/disable Remote Desktop and RDP Network Level Authentication",
-  "author": "Martez Reed",
+  "name": 		 "martezr-rdp",
+  "version": 	 "0.1.2",
+  "summary": 	 "Puppet module to enable/disable Remote Desktop and RDP Network Level Authentication",
+  "author": 	 "Martez Reed",
   "description": "Puppet module to enable/disable Remote Desktop and RDP Network Level Authentication",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "windows",
+      "operatingsystemrelease": ["6.1.7600","6.1.7601", "6.2.9200", "6.3.9200", "6.3.9600"]
+    }
+  ],
   "dependencies": [
     {
       "name": "puppetlabs/registry"
+	  "version_requirement": ">= 1.0.0"
     },
     {
       "name": "puppetlabs/stdlib"
+	  "version_requirement": ">= 3.2.0"
     },
     {
       "name": "rmsphd/windows_firewall"
+	  "version_requirement": ">= 0.0.1"
     }
   ],
   "types": [],

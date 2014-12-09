@@ -8,5 +8,6 @@ fixtures:
       ref: '3.2.0'
     windows_firewall:
       repo: 'git://github.com/rmsphd/puppet-windows_firewall.git'
+	  ref: 'ebd5ec316dcfc98a55737cdc880a9dba5eb84498'
   symlinks:
     rdp: "#{source_dir}"

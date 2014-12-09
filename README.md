@@ -33,8 +33,6 @@ Enable network level authentication.
 Enable RDP
 
 <pre>
-class { 'rdp':
-  rdp_enable => true,
-  rdp_nla_enable => true,
-  }
+rdp::rdp_enable: 'true',
+rdp::rdp_nla_enable 'true',
 </pre>
