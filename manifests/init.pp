@@ -1,3 +1,5 @@
+# init.pp
+#
 # Class: rdp
 #
 #  This class is used to enable/disable remote desktop and remote desktop network level authentication
