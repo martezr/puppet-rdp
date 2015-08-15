@@ -4,9 +4,9 @@
       "author": "Martez Reed",
       "license": "Apache-2.0",
       "summary":     "Puppet module to enable/disable Remote Desktop and RDP Network Level Authentication",
-      "source": "https://github.com/martezr/martezr-rdp",
-      "project_page": "https://github.com/martezr/martezr-rdp",
-      "issues_url": "https://github.com/martezr/martezr-rdp/issues",
+      "source": "https://github.com/martezr/puppet-rdp",
+      "project_page": "https://github.com/martezr/puppet-rdp",
+      "issues_url": "https://github.com/martezr/puppet-rdp/issues",
       "tags": ["rdp"],
       "operatingsystem_support": [
        {
@@ -36,5 +36,3 @@
         { "name": "rmsphd/windows_firewall", "version_requirement": ">= 0.1.0 <5.0.0" },
       ]
     }
-  ],
-}
