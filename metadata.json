@@ -1,6 +1,6 @@
 {
       "name": "martezr-rdp",
-      "version": "0.1.1",
+      "version": "0.1.3",
       "author": "Martez Reed",
       "license": "Apache-2.0",
       "summary":     "Puppet module to enable/disable Remote Desktop and RDP Network Level Authentication",
