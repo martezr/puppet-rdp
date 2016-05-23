@@ -33,6 +33,6 @@
       "dependencies": [
         { "name": "puppetlabs/registry", "version_requirement": ">= 0.1.0 <5.0.0" },
         { "name": "puppetlabs/stdlib", "version_requirement": ">= 0.1.0 <5.0.0" },
-        { "name": "rmsphd/windows_firewall", "version_requirement": ">= 0.1.0 <5.0.0" },
+        { "name": "puppet/windows_firewall", "version_requirement": ">= 0.1.0 <5.0.0" },
       ]
     }
