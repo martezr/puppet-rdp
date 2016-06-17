@@ -2,6 +2,6 @@ fixtures:
   repositories:
     registry: "https://github.com/puppetlabs/puppetlabs-registry.git"
     stdlib: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
-    windows_firewall: "https://github.com/rmsphd/puppet-windows_firewall.git"
+    windows_firewall: "https://github.com/voxpupuli/puppet-windows_firewall.git"
   symlinks:
     rdp: "#{source_dir}"
