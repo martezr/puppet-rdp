@@ -84,6 +84,6 @@ class rdp (
     }
   }
   else {
-     warning('This operating system is not supported.')
+    warning('This operating system is not supported.')
   }
   }
